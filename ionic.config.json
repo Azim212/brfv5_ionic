@@ -1,0 +1,7 @@
+{
+  "name": "brfv5_ionic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
