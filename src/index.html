@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <title>Ionic App</title>
-  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport"
+    content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
 
@@ -29,7 +31,51 @@
 
   <link href="build/main.css" rel="stylesheet">
 
+  <link rel="icon" type="image/png" href="./assets/icons/app-logo-128x128.png">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+
+  <link rel="icon" type="image/ico" href="./assets/icons/favicon.ico">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-icon-180x180.png">
+
+  <title>Beyond Reality Face SDK - BRFv5 - Face Tracking for Browser/JavaScript</title>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #ffffff;
+      -ms-text-size-adjust: none;
+      -moz-text-size-adjust: none;
+      -webkit-text-size-adjust: none;
+    }
+  </style>
+
+  <link rel="stylesheet" type="text/css" href="./assets/js/highlight/highlight_tomorrow.css">
+  <script src="./assets/js/highlight/highlight.pack.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/brfv5_examples.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/brfv5_select.css">
+
+
+
 </head>
+
 <body>
 
   <!-- Ionic's root component and where the app will load -->
@@ -45,5 +91,14 @@
   <!-- The main bundle js is generated during the build process -->
   <script src="build/main.js"></script>
 
+  <script src="../../assets/js/examples/setup__selects.js"></script>
+
+  <script> // fix for weird half screen??
+    const app = document.querySelector('ion-app');
+    app.style.height = '100%';
+  </script>
+
+
 </body>
+
 </html>
