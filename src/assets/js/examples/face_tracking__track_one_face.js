@@ -65,6 +65,7 @@ export const handleTrackingResults = (brfv5Manager, brfv5Config, canvas) => {
     const face = faces[i]
 
     if (face.state === brfv5.BRFv5State.FACE_TRACKING) {
+      console.log(count)
       count++;
 
       // console.log(lmData)
@@ -75,10 +76,7 @@ export const handleTrackingResults = (brfv5Manager, brfv5Config, canvas) => {
       // alert(JSON.stringify(lmData))
 
       if (count == 20) {
-        // TODO -- fetch from API: 
-        // https://asia-east2-igneous-stone-276102.cloudfunctions.net/facialEmotionPredictor-2
-
-
+        
         var template = {
           "message": lmData
         }
